@@ -142,7 +142,7 @@
             }
         }
     },
-    "$id": "https://opendata.slo.nl/curriculum/schemas/inhouden",
+    "$id": "https://opendata.slo.nl/curriculum/schemas/curriculum-inhouden/context.json",
     "$schema": "https://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
