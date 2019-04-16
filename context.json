@@ -1,7 +1,7 @@
 {
     "definitions": {
         "inhoud": {
-            "allOf": [ { "$ref": "http://opendata.slo.nl/curriculum/schemas/doelen#/definitions/base" } ],
+            "allOf": [ { "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-doelen/context.json#/definitions/base" } ],
             "properties": {
                 "description": {
                     "type": "string"
@@ -9,11 +9,11 @@
                 "doelniveau_id": {
                     "allOf": [
                         {
-                            "$ref": "http://opendata.slo.nl/curriculum/schemas/doelen#/definitions/uuidArray"
+                            "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-doelen/context.json#/definitions/uuidArray"
                         },
                         {
                             "items": {
-                                "itemTypeReference": "http://opendata.slo.nl/curriculum/schemas/doelen#/definitions/doelniveau"
+                                "itemTypeReference": "http://opendata.slo.nl/curriculum/schemas/curriculum-doelen/context.json#/definitions/doelniveau"
                             }
                         }
                     ]
@@ -60,7 +60,7 @@
                 "vaksubkern_id" : {
                     "allOf": [
                         {
-                            "$ref": "http://opendata.slo.nl/curriculum/schemas/doelen#/definitions/uuidArray"
+                            "$ref": "https://opendata.slo.nl/curriculum/schemas/curriculum-doelen/context.json#/definitions/uuidArray"
                         },
                         {
                             "items": {
@@ -95,7 +95,7 @@
                 "vakinhoud_id": {
                     "allOf": [
                         {
-                            "$ref": "http://opendata.slo.nl/curriculum/schemas/doelen#/definitions/uuidArray"
+                            "$ref": "https://opendata.slo.nl/curriculum/schemas/doelen#/definitions/uuidArray"
                         },
                         {
                             "items": {
@@ -142,8 +142,8 @@
             }
         }
     },
-    "$id": "http://opendata.slo.nl/curriculum/schemas/inhouden",
-    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://opendata.slo.nl/curriculum/schemas/inhouden",
+    "$schema": "https://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
         "vak": {
