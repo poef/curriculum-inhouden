@@ -13,7 +13,7 @@
                         },
                         {
                             "items": {
-                                "itemTypeReference": "http://opendata.slo.nl/curriculum/schemas/curriculum-doelen/context.json#/definitions/doelniveau"
+                                "itemTypeReference": "https://opendata.slo.nl/curriculum/schemas/curriculum-doelen/context.json#/definitions/doelniveau"
                             }
                         }
                     ]
@@ -35,14 +35,6 @@
                     "uniqueItems": true
                 }
             },
-            "anyOf": [
-                {
-                    "required": ["id","title","vakkern_id"]
-                },
-                {
-                    "required": ["id","title","doelniveau_id"]
-                }
-            ],
             "not": {
                 "anyOf": [
                     {
@@ -143,7 +135,7 @@
         }
     },
     "$id": "https://opendata.slo.nl/curriculum/schemas/curriculum-inhouden/context.json",
-    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
         "vak": {
